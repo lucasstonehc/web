@@ -1,0 +1,21 @@
+p {
+    color: red;
+    width: 500px;
+    border: 1px solid black;
+}
+#blue {
+    color: blue;
+}
+
+.myc {
+    color: blue;
+    font-weight: bold;
+}
+[href^="http:"] {
+    font-weight: bold;
+    font-size: 130%;
+}
+
+html {
+    font-family: 'Roboto';
+}
