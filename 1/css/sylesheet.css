@@ -19,3 +19,9 @@ p {
 html {
     font-family: 'Roboto';
 }
+
+body {
+    margin: 0% auto;
+    padding: 0%, 20%, 20%, 20%;
+    border-block-color: black;
+}
