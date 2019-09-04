@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Receita rápida de hummus</title>
+  </head>
+  <body>
+    <div>
+        <h2><div>Receita rápida de Hummus</div></h2>
+        <div>
+            Com esta receita você faz um hummus rápido e saboroso, sem bagunçar sua cozinha. Ela foi adaptada de várias outras receitas que andei lendo ao longo dos anos.
+            hummus é uma pasta grossa deliciosa muito usada em pratos gregos e do oriente médio. Fica uma delícia com salada, carne grelhada e pão de centeio.            
+        </div>
+        <h3>Ingredientes</h3>
+        <ul>
+            <li>1 lata (400g) de grão de bico</li>
+            <li>175g de tahine</li>
+            <li>6 tomates secos</li>
+            <li>Meia pimenta vermelha</li>
+            <li>Uma pitada de pimenta caiena</li>
+            <li>1 dente de alho</li>
+            <li>Um fio de azeite de oliva</li>
+        </ul>
+        <h3>Instruções</h3>
+        <div>
+            <ul>
+                <li>Retire a casca do alho e pique grosseiramente</li>
+                <li>Retire todas sementes e o talo da pimenta e pique grosseiramente</li>
+                <li>Coloque todos os ingredientes no processador</li>
+                <li>Processe até virar uma pasta.</li>
+                <li>Se quiser um hummus com pedacinhos, processe por menos tempo</li>
+                <li>Se quiser um hummus lisinho, processe por mais tempo</li>
+            </ul>
+        </div>
+        <div>
+            Para um sabor diferente, experimente misturar um pouco de limão e coentro, pimenta chili, lima e chipotle, harissa e hortelã, ou espinafre e queijo feta. Vá experimentando e veja o que mais lhe agrada.
+        </div>
+        <h3>Armazenamento</h3>
+        <div>
+            Pode colocá-lo em um recipiente fechado e guardá-lo na geladeira. Dá pra usá-lo por cerca de uma semana depois de feito. Se ele começar a fazer bolhinhas, jogue fora.
+            Você também pode congelar o hummus e ir usando por alguns meses.
+        </div>
+    </div>
+  </body>
+</html>
