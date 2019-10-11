@@ -1,0 +1,14 @@
+tr {
+    padding: 3px 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px
+}
+td {
+    padding: 10px 10px;
+}
+
+button {
+    padding: 10px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px
+}

@@ -1,0 +1,30 @@
+
+
+.visible {
+    visibility: hidden;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    text-align: center
+}
+#message {
+    background-color: rgb(69, 131, 69);
+    border: 5px;
+    border-style: dashed;
+}
+
+body {
+    background-color: black
+}
+
+#btnMessage {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 5px;
+    display: block;
+    align-content: center
+}
