@@ -1,0 +1,27 @@
+#main{
+    display: flex;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+    color: white
+}
+#ok{
+    background-color: grey;
+    width: 20%;
+    margin: 20px 20px;
+    visibility: hidden;
+}
+#fizz{
+    background-color: rgb(129, 129, 51);
+    width: 20%;
+    margin: 20px 20px;
+    visibility: hidden;
+}
+#buzz{
+    background-color: rgb(163, 94, 163);
+    width: 20%;
+    margin: 20px 20px;
+    visibility: hidden;
+}
