@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarefas</title>
+</head>
+<body>
+    <h1>Tarefas</h1>
+
+    <form action="/tarefas/nova" method="post">
+        <div>
+            <label for="desc">Descrição</label>
+            <input type="text" id="desc" name="desc">
+        </div>
+        <div>
+            <label for="prazo">Prazo</label>
+            <input type="date" id="prazo" name="prazo">
+        </div>
+        <div>
+            <button>Criar</button>
+        </div>
+    </form>
+
+
+    <p>Marque suas tarefas como concluída.</p>
+
+    <% for (var tarefa of tarefas) { %>
+    
+    <div>
+        <label>
+            <input type="checkbox"
+                name="concluidas"
+                value="<%= tarefa.id %>"
+                <%= tarefa.concluida ? 'checked' : '' %>
+                >
+            <%= tarefa.descricao %>
+            <% if (tarefa.prazo) { %>
+                (Prazo: <%= tarefa.prazo.toLocaleDateString() %>)
+            <% } %>
+        </label>
+        <form id="frm-excluir-tarefa" action="/tarefas/excluir" method="post">
+            <input type="hidden" name="tarefa_id" value="<%= tarefa.id %>">
+            <button>Excluir</button>
+        </form>
+    </div>
+    <% } %>
+    <form id="frm-atualizar-tarefa" action="/tarefas/concluir" method="post">
+        <input type="hidden" name="tarefa_id" id="tarefa_id">
+        <input type="hidden" name="tarefa_concluida" id="tarefa_concluida">
+    </form>
+    
+    <script>
+        (function() {
+
+            function atualizarTarefa(e) {
+                var chkTarefa = e.target;
+                document.querySelector('#tarefa_id').value = chkTarefa.value;
+                document.querySelector('#tarefa_concluida').value = chkTarefa.checked;
+                document.querySelector('#frm-atualizar-tarefa').submit();
+            }
+
+            document
+                .querySelectorAll('input[type=checkbox]')
+                .forEach(function(elem) {
+                    elem.addEventListener('change', atualizarTarefa);
+                });
+        })();
+    </script>
+</body>
+</html>
